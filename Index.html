@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sticky Navbar | Allure Corporation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    
+    <script src="https://kit.fontawesome.com/70db70bd37.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <!--------navigation---bar---->
+  <nav class="navbar">
+    
+    <div class="content">
+ 
+ <!---------heading-navbar--Logo--->
+       <div class="logo"><a href="#">Royal Feel Lifestyle</a></div>
+       
+ <!---------panel-menu--->
+      <ul class="menu-list">
+        
+        
+  <!---------menu-icon-cancel-btn-->
+        <div class="icon cancel-btn">
+          
+          
+          
+ <!------font-awesome--cancel-btn-icon-->
+          <i class="fas fa-times"></i>
+        </div>
+        
+        
+ <!---------menu-home-abt-buttons-->
+       <li><a href="#">Home</a></li>
+        <li><a href="#ab">About</a></li>
+        <!---<li><a href="#">Services</a></li>-->
+       <!---<li><a href="#">Features</a></li>-->
+        <li><a href="#c">Contact</a></li>
+      </ul>
+      
+ <!---------menu-icon-burger---->
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+ <!---------banner--->
+ 
+  <div class="banner"></div>
+  <div id="ab" class="about">ROYAL ATTIRE FOR ROYAL PERSONALITY
+  </div>
+   
+   
+ <!---------about-information--->
+ <section  class="section">
+    <section class="secRight">
+      <div class="para">
+      <p class="sectiontag text-small">Swaroop Singh Rajpurohit</p>
+      <p class="sectionsubtag text-ab">is the owner as well as founder of royal feel lifestyle he started it just from a scrap . He started the online shop and lately he opened offline store as well </p>
+     </div>
+     <!--photo-->
+     <div class="thumbnail">
+       <img src="Roy.jpg" alt="photo" class="imgfluid"/></div>
+      
+    </section> 
+    </section>
+    
+   
+   <section class="section">
+     <section class="sectionleft">
+   
+     <!--photo-->
+     <div class="thumbnail">
+       <img src="wallpaper.jpg" alt="photo" class="imgfluid"/>
+       
+     </div>
+     
+      <div class="para">
+
+
+
+    <p class="sectiontag text-small">ROYAL FEEL LIFESTYLE</p>
+      <p class="sectionsubtag text-ab">Men's clothing though is basically structured around the pants and shirts but still they can be categorized in to formal wear, business wear, casual wear and athletic/sport wear which are divided on the basis of the occasion they are worn on. Let's look at the classification for the comfort of understanding the styles that fit your wardrobe.</p>
+     </div>
+      </section>
+</section>
+
+
+    <section class="section">
+      <section class="secRight">
+      <div class="para">
+      <p class="sectiontag text-small">END OF YOUR SEARCH IS HERE</p>
+      <p class="sectionsubtag text-ab">You can order online as well as you can visit our offline store for further details contact us through the details provided below . </p>
+     </div>
+     <!--photo-->
+     <div class="thumbnail">
+       <img src="Shop.jpg" alt="photo" class="imgfluid"/>
+
+     </div>
+      
+     </section>
+    </section> 
+ <!---------contact-section--->
+ 
+ 
+  <!---------contact--us--heading-->
+    <section  class="cont" >
+      <div id="c" class="harsh">
+        
+      
+  <h2 class="con">Contact Us</h2>
+  
+  </div>
+        <div class="formm">
+          
+
+            
+         
+<!--------whatsapp-->  
+          <a class="q" href="https://wa.me/919460504007" target="_blank" ><i class="fab fa-2x fa-whatsapp"></i></a>
+          
+          
+<!----instagram-->
+          <a class="q" href="https://instagram.com/royalfeellifestyles_007?igshid=1wkmuu15zuipg"><i class="fab fa-2x fa-instagram"></i></a>
+           
+          
+ <!------facebook--->
+             <a class="q" href=""><i class="fab fa-2x fa-facebook"></i></a>
+            
+           
+ <!----twitter--->
+                <a class="q" href="https://www.google.co.in/maps/place/Royal+Feel+Mens+Wear,+Solapur+-+Pune+Hwy,+Loni+Kalbhor,+Maharashtra+412201/@18.4892349,74.019273,17z/data=!4m2!3m1!1s0x3bc2e9c880f068dd:0x9529c1891d9715f3"><i class="fas fa-map-marker-alt"></i></a>
+             
+             </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-------copyright-2021-->
+<div class="txt">
+   <p>COPYRIGHT &copy;2021 - All Rights Reserved</p>
+</div>
+        
+        </div>
+    </section>
+    
+    
+            <section class="foot">
+  <div class"arue">
+    <br>
+    <p>Designed by -</p>
+    <a href=" https://allureco.netlify.app">Allure Corporation</a>
+    </div>
+  
+  </section>
+
+
+
+
+<p>website under construction....</p>
+                
+  <script>
+  
+    const body = document.querySelector("body");
+    
+    
+    const navbar = document.querySelector(".navbar");
+    
+    
+    const menu = document.querySelector(".menu-list");
+    
+    
+    const menuBtn = document.querySelector(".menu-btn");
+    
+    
+    const cancelBtn = document.querySelector(".cancel-btn");
+    
+    
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    
+    
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+    
+    
+  </script>
+
+</body>
+</html>
+
+
+
+
